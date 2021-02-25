@@ -1,7 +1,7 @@
 ---
-layout: page
-title: Resume
-permalink: /resume
+layout: default
+title: resume
+permalink: /resume/
 ---
 { Curious ■ Creative ■ Conscientious ■ Meticulous ■ Tenacious ■ Self Learning ■ Adaptive ■ Veteran remote worker ■ Learning technology across multiple millennia }
 
