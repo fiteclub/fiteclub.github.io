@@ -55,6 +55,7 @@ plugins:
 header_pages:
   - index.md
   - about.md
+  - resume.md
 
 style: hacker # dark (default), light or hacker
 listen_for_clients_preferred_style: true # false (default) or true
