@@ -1,64 +1,123 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# the base hostname & protocol for your site, e.g. http://example.com
+url: "https://williamcanin.me"
+# the subpath of your site, e.g. /blog
+baseurl: "/typing-jekyll-template"
 
-# Site settings
-title: jekyll-theme-hackcss
-description: > # this means to ignore newlines until "baseurl:"
-  A minimalistic theme for Jekyll, based on hack.css
-repository: https://github.com/wemake-services/jekyll-theme-hackcss
-baseurl: /jekyll-theme-hackcss  # the subpath of your site, e.g. /blog
-url: https://wemake-services.github.io  # the base hostname & protocol for your site
+# Plugins de player - Jektify
+jektify:
+  enable: true
+  open: true
+  toggle:
+    enable: true
+  spotify:
+    user: # "you_user_spotify"
+    text: "See me no Spotify"
+  sass:
+    jekyll: true
+    other:
+      dir: "way/to/your/SASS"
+  title:
+    enable: false
+    text: "Music name"
+  description:
+    enable: false
+    text: |
+      Jekyll plugin to generate html snippets for embedding Spotify Musics.
+      To listen to the full song, open your Spotify and start these musics.
 
-# Build settings
+
+# Attention! Do not change the information below as it is 
+# for development unless you know what you are doing.
+
+include: ['_blog','_pages']
+
 markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
 
-# Sass settings
+permalink: /blog/:title/
+
+layouts_dir: _src/_layouts
+includes_dir: _src/_includes
+plugins_dir: _src/_plugins
+
+destination: public
+port: 4000
+host: localhost
+
 sass:
+  load_paths:
+  - _src/_sass
+  - node_modules
+  - vendor/node_modules
   style: compressed
 
-# Theme settings
-theme_mode: markdown  # choices are: 'dark', 'standard', 'markdown'
+feed:
+  path: feed.xml
 
-# Customizations
-your_name: wemake.services
-email: mail@sobolevn.me
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
 
-navigation:
-  - text: Home
-    url: /
-  - text: Docs
-    url: /docs
-  - text: Examples
-    url: /examples
+tag_page_layout: tag
+tag_page_dir: blog/tags
+tag_permalink_style: pretty
 
-projects:
-  - name: git-secret
-    description: A bash-tool to store your private data inside a git repository.
-    link: https://sobolevn.github.io/git-secret
-    image: https://github.com/sobolevn/git-secret/blob/7c9ae0b1853d4c15549027524121b9e40219fe47/images/git-secret-sm.png?raw=true
-  - name: awesome-cryptography
-    description: A curated list of cryptography resources and links.
-    link: https://github.com/sobolevn/awesome-cryptography
-    image: https://pbs.twimg.com/profile_images/751426570607271937/vGxpniun_400x400.jpg
-  - name: ecto_autoslug_field
-    description: Automatically creates slugs for your Ecto models.
-    link: https://github.com/sobolevn/ecto_autoslug_field
-  - name: django-split-settings
-    description: Organize Django settings into multiple files and directories. Easily override and modify settings. Use wildcards and optional settings files.
-    link: https://github.com/sobolevn/django-split-settings
+imager:
+  dir_posts: "assets/images/posts"
 
-social:
-  - service: github
-    username: sobolevn
-    link: https://github.com/sobolevn
-  - service: twitter
-    username: sobolevn
-    link: https://twitter.com/sobolevn
+# Readingtime and Datelang
+## supported languages:
+### ch_CH - Chinese | de_DE - Deutschland | en_US - English
+### es_ES - Spanish | fr_FR - French | it_IT - Italian
+### ja_JP - Japan | pt_PT - Portuguese | ru_RU - Russian
+reading_time:
+  locale: en_US
 
-# Plugins
-gems:
-  - jekyll-seo-tag
+datelang:
+  locale: en_US
+  reload: true
+
+pagination:
+  enabled: true
+  debug: false
+  collection: 'posts'
+  sort_field: 'date'
+  sort_reverse: true
+  per_page: 5
+  permalink: '/:num/'
+  locale: ''
+  title: ':title - Page :num'
+  limit: 0
+  extension: html
+  indexpage: 'index'
+
+gist:
+  noscript: false
+
+exclude:
+  - temp
+  - .hidden
+  - node_modules
+  - _src
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - screenshot.png
+  - CHANGELOG
+  - COPYING
+  - package-lock.json
+  - package.json
+  - README.md
+  - README-ptbr.md
+  - gulpfile.js
+  - Rakefile
+  - yarn.lock
+  - Makefile
+
+home:
+  terminal:
+    enable: true

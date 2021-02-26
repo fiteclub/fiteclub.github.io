@@ -1,0 +1,178 @@
+I"(<ul id="markdown-toc">
+  <li><a href="#examples" id="markdown-toc-examples">Examples</a>    <ul>
+      <li><a href="#table" id="markdown-toc-table">Table</a></li>
+      <li><a href="#list" id="markdown-toc-list">List</a></li>
+      <li><a href="#image-responsive-plugin-imager" id="markdown-toc-image-responsive-plugin-imager">Image responsive (plugin Imager)</a></li>
+      <li><a href="#code-in-one-line---text" id="markdown-toc-code-in-one-line---text">Code in one line - Text</a></li>
+      <li><a href="#unlighted-code" id="markdown-toc-unlighted-code">Unlighted code</a></li>
+      <li><a href="#gist-code" id="markdown-toc-gist-code">Gist code</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>Hi! :hand:</p>
+
+<p><a href="https://www.webpagefx.com/tools/emoji-cheat-sheet/" target="_blank">Emoji Syntax</a></p>
+
+<p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home" target="_blank">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll" target="_blank">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/" target="_blank">Jekyll Talk</a>.</p>
+
+<h1 id="examples">Examples</h1>
+<p><br />
+<strong>Titles with icon - Plugin Fa</strong></p>
+
+<h2 id="table">Table</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>First Header</th>
+      <th>Second Header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Content from cell 1</td>
+      <td>Content from cell 2</td>
+    </tr>
+    <tr>
+      <td>Content in the first column</td>
+      <td>Content in the second column</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="list">List</h2>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />@mentions, #refs, <a href="" target="_blank">links</a>, <strong>formatting</strong>, and <del>tags</del> supported</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />list syntax required (any unordered or ordered list supported)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />this is a complete item</li>
+  <li class="task-list-item">
+    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />this is an incomplete item</p>
+  </li>
+  <li class="task-list-item">Item 1</li>
+  <li class="task-list-item">Item 2
+    <ul>
+      <li>Item 2a</li>
+      <li>Item 2b</li>
+    </ul>
+  </li>
+</ul>
+
+<ol>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3
+    <ol>
+      <li>Item 3a</li>
+      <li>Item 3b</li>
+    </ol>
+  </li>
+</ol>
+
+<p><strong>Notes:</strong></p>
+
+<blockquote>
+  <p>We’re living the future so the present is our past.</p>
+</blockquote>
+
+<h2 id="image-responsive-plugin-imager">Image responsive (plugin Imager)</h2>
+
+<div class="row imager__plugin">
+            <img class="img-fluid mx-auto d-block" src="/typing-jekyll-template/assets/images/posts/typing_logotype.png" title="typing_logotype.png" alt="typing_logotype.png" />
+          </div>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi eaque, temporibus quia praesentium dolores repellat minus corporis illo sequi ab numquam laborum blanditiis eveniet. Unde libero ex qui quas temporibus.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi eaque, temporibus quia praesentium dolores repellat minus corporis illo sequi ab numquam laborum blanditiis eveniet. Unde libero ex qui quas temporibus.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi eaque, temporibus quia praesentium dolores repellat minus corporis illo sequi ab numquam laborum blanditiis eveniet. Unde libero ex qui quas temporibus.</p>
+
+<p><img style="float: left;" class="img-fluid imager__plugin" src="/typing-jekyll-template/assets/images/posts/typing_logotype.png" title="typing_logotype.png" alt="typing_logotype.png" /></p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi eaque, temporibus quia praesentium dolores repellat minus corporis illo sequi ab numquam laborum blanditiis eveniet. Unde libero ex qui quas temporibus.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi eaque, temporibus quia praesentium dolores repellat minus corporis illo sequi ab numquam laborum blanditiis eveniet. Unde libero ex qui quas temporibus.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi eaque, temporibus quia praesentium dolores repellat minus corporis illo sequi ab numquam laborum blanditiis eveniet. Unde libero ex qui quas temporibus.</p>
+
+<p><img style="float: right;" class="img-fluid imager__plugin" src="/typing-jekyll-template/assets/images/posts/typing_logotype.png" title="typing_logotype.png" alt="typing_logotype.png" /></p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi eaque, temporibus quia praesentium dolores repellat minus corporis illo sequi ab numquam laborum blanditiis eveniet. Unde libero ex qui quas temporibus.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi eaque, temporibus quia praesentium dolores repellat minus corporis illo sequi ab numquam laborum blanditiis eveniet. Unde libero ex qui quas temporibus.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi eaque, temporibus quia praesentium dolores repellat minus corporis illo sequi ab numquam laborum blanditiis eveniet. Unde libero ex qui quas temporibus.
+Commodi eaque, temporibus quia praesentium dolores repellat minus corporis illo sequi ab numquam laborum blanditiis eveniet. Unde libero ex qui quas temporibus.</p>
+
+<p><br />
+<br /></p>
+
+<p><span style="font-size: 10px;" class="p-2 my-2 badge badge-secondary badge__plugin">Ruby</span>
+<span style="font-size: 20px;" class="p-2 my-2 badge badge-secondary badge__plugin">HTML5</span>
+<span style="font-size: 30px;" class="p-2 my-2 badge badge-secondary badge__plugin">CSS3</span>
+<span style="font-size: 40px;" class="p-2 my-2 badge badge-secondary badge__plugin">JQuery</span></p>
+
+<p><br />
+<br /></p>
+
+<h2 id="code-in-one-line---text">Code in one line - Text</h2>
+
+<p><code class="highlighter-rouge">Featured</code></p>
+
+<h2 id="unlighted-code">Unlighted code</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">fancyAlert</span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">.</span><span class="nx">facebox</span><span class="p">({</span><span class="na">div</span><span class="p">:</span><span class="dl">'</span><span class="s1">#foo</span><span class="dl">'</span><span class="p">})</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="gist-code">Gist code</h2>
+
+<script src="https://gist.github.com/7ab295790e841929cf83c0b1676269af.js"> </script>
+
+<p><br /></p>
+
+<p>To use, see:<a href="https://jektify.github.io" target="_blank">Jektify - Doc</a></p>
+
+<dl class="jektify jektify--dark jektify--custom">
+
+          <dt class="jektify__header jektify__header--dark jektify__header--custom">
+
+            <a class="jektify__brand jektify__brand--dark jektify__brand--custom" href="https://jektify.github.io" target="_blank">jektify</a>
+
+            <i class="jektify__year jektify__year--dark jektify__year--custom">&copy;&nbsp;2021&nbsp;</i>
+              <span class="jektify__button jektify__button--dark jektify__button--custom jektify__button--open">+</span>
+          </dt>
+
+          <dd class="jektify__body jektify__body--dark jektify__body--custom" style="display: block">
+
+            
+
+            <h1 class="jektify__title jektify__title--dark jektify__user--dark jektify__title--custom" style="display: none;">Music name</h1>
+
+            <p class="jektify__description jektify__description--dark jektify__description--custom" style="display: none;">Jekyll plugin to generate html snippets for embedding Spotify Musics.
+To listen to the full song, open your Spotify and start these musics.
+</p>
+
+            <div class="jektify__tracklist jektify__tracklist--dark jektify__tracklist--custom">
+              <iframe id="jektify__track" class="jektify__track jektify__track--dark 
+                jektify__track--custom" src="https://embed.spotify.com/?uri=spotify:track:62qsgMnY4wg8nE5qjyOdWO&amp;theme=dark" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media">
+              </iframe>
+            </div>
+          </dd>
+        </dl>
+
+<p>Goodbye! :wink:</p>
+
+<hr style="border-top: 1px solid #9D9D9D ; color: #9D9D9D ;" class="endpost" />
+
+:ET

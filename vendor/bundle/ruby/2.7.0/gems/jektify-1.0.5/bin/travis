@@ -1,0 +1,84 @@
+#!/usr/bin/env bash
+
+GEM__ROOT=$PWD
+JEKYL__PROJECT="project"
+APP__NAME="jektify"
+APP__VERSION="1.0.5"
+
+function _clean(){
+  cd $GEM__ROOT
+  rm -rf "test/travis/$JEKYL__PROJECT"
+}
+
+# Generated Jektify gem
+bundle exec rake build
+echo "Jektify gem created!"
+
+# Generated Jektify gem
+bundle exec rake install
+echo "${APP__NAME^^} gem installed!"
+
+# Clean cache before created
+_clean
+
+# Created project Jekyll
+mkdir -p test/travis
+bundle exec jekyll new test/travis/$JEKYL__PROJECT; cd $_
+
+# Add dependency in Gemfile for Jekyll project
+cat << EOF >> Gemfile
+gem "bigdecimal", "~> 2.0"
+gem "json", "~> 2.3"
+EOF
+
+# Add Jektify in file Gemfile
+sed -i "/  gem \"jekyll-feed\", \"~> 0.12\"/a \  \gem \"$APP__NAME\", \"~> $APP__VERSION\"" Gemfile
+
+# Add plugin of Jektify in file _config.yml
+sed -i "/- jekyll-feed/a\ \ - $APP__NAME" _config.yml
+
+# Add config Jektify in file _config.yml
+cat << EOF >> _config.yml
+
+$APP__NAME:
+  enable: true
+  open: true
+  toggle:
+    enable: true
+  spotify:
+    user: # "you_user_spotify"
+    text: "See me no Spotify"
+  sass:
+    jekyll: true
+    other:
+      dir: "way/to/your/SASS"
+  title:
+    enable: false
+    text: "Music name"
+  description:
+    enable: false
+    text: |
+      Jekyll plugin to generate html snippets for embedding Spotify Musics.
+      To listen to the full song, open your Spotify and start these musics.
+EOF
+
+# Add liquid in markdown of Jektify
+echo "{% $APP__NAME spotify/track/62qsgMnY4wg8nE5qjyOdWO/dark %}" >> _posts/*-welcome-to-jekyll.markdown
+
+# Bundler configuration folder
+mkdir -p .bundle
+cat << EOF > .bundle/config
+---
+BUNDLE_PATH: "vendor/bundle"
+BUNDLE_DISABLE_SHARED_GEMS: "true"
+EOF
+
+# Re-Update Gemfile.lock for project Jekyll
+bundle install
+
+# Compiled project Jekyll with liquid of gem Jektify
+bundle exec jekyll b
+echo "${APP__NAME^^} $JEKYL__PROJECT compiled!"
+
+# Clean cache
+# _clean

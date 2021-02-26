@@ -1,0 +1,80 @@
+I"�<h1 id="typing">Typing</h1>
+
+<p>A theme for Jekyll</p>
+
+<h2 id="personal-data">Personal Data</h2>
+<hr />
+
+<p><strong>Nationality</strong>: Brazilian <br />
+<strong>Date of Birth</strong>: 2017/04/05 <br />
+<strong>Marital Status</strong>: Single <br />
+<strong>Home Address</strong>: Lorem, Lorem Ipsum, 789 / Dolor<br />
+<strong>Country</strong>: Brazil <br />
+<strong>Province</strong>: Lorem Ipsum/LI <br />
+<strong>Telephone</strong>: +55 011 1234 5678 <br />
+<strong>Email</strong>: your-email@example.com <br />
+<strong>Website</strong>: <a href="http://williamcanin.com">my-web-site.domain</a></p>
+
+<h2 id="biography">Biography</h2>
+<hr />
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate aliquid, alias voluptatibus vel eligendi eveniet. Quas rem, repellendus deleniti nostrum minima delectus maxime fugiat, voluptates modi, laudantium, natus eligendi <sequi class="Lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At non quibusdam repellat commodi veniam ab voluptate odio recusandae earum, magnam dolore architecto dolorem. Sint dolor deserunt, molestiae soluta, consequatur non!</sequi></p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde earum itaque saepe voluptatum distinctio soluta provident repudiandae mollitia similique repellat eum incidunt quo, tenetur quasi voluptatem sed animi repellendus.</p>
+
+<h2 id="objetive">Objetive</h2>
+<hr />
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias eum, quae delectus, et sit laborum voluptas neque, nemo itaque quia a. Quas harum earum, quasi minus aspernatur laboriosam aperiam nam.</p>
+
+<h2 id="education">Education</h2>
+<hr />
+
+<h3 id="ipsum-dolor">Ipsum Dolor</h3>
+
+<p><em>Lorem, Lorem — Lorem Ipsum ‘14</em></p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quod voluptatum earum asperiores esse labore impedit eos cum obcaecati unde sequi ad beatae magni aut iure, dolorum doloribus nulla, officia!</p>
+
+<h3 id="ipsum-dolor-1">Ipsum Dolor</h3>
+
+<p><em>Lorem, Lorem — Lorem Ipsum ‘14</em></p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quod voluptatum earum asperiores esse labore impedit eos cum obcaecati unde sequi ad beatae magni aut iure, dolorum doloribus nulla, officia!</p>
+
+<h2 id="skills">Skills</h2>
+<hr />
+
+<h4 id="frontend"><strong>Frontend</strong></h4>
+
+<p><span style="font-size: 16px;" class="p-2 my-2 badge badge-secondary badge__plugin">HTML5</span>
+<span style="font-size: 16px;" class="p-2 my-2 badge badge-secondary badge__plugin">CSS3</span>
+<span style="font-size: 16px;" class="p-2 my-2 badge badge-secondary badge__plugin">SASS</span></p>
+
+<h4 id="frameworks"><strong>Frameworks</strong></h4>
+
+<p><span style="font-size: 16px;" class="p-2 my-2 badge badge-secondary badge__plugin">Bootstrap</span>
+<span style="font-size: 16px;" class="p-2 my-2 badge badge-secondary badge__plugin">AngularJS</span>
+<span style="font-size: 16px;" class="p-2 my-2 badge badge-secondary badge__plugin">ReactJS</span></p>
+
+<h4 id="backend"><strong>Backend</strong></h4>
+
+<p><span style="font-size: 16px;" class="p-2 my-2 badge badge-secondary badge__plugin">Python</span>
+<span style="font-size: 16px;" class="p-2 my-2 badge badge-secondary badge__plugin">Javascript</span></p>
+
+<h4 id="toolsmethodology"><strong>Tools/Methodology</strong></h4>
+
+<p><span style="font-size: 16px;" class="p-2 my-2 badge badge-secondary badge__plugin">NodeJS</span>
+<span style="font-size: 16px;" class="p-2 my-2 badge badge-secondary badge__plugin">Webpack</span>
+<span style="font-size: 16px;" class="p-2 my-2 badge badge-secondary badge__plugin">Gulp</span>
+<span style="font-size: 16px;" class="p-2 my-2 badge badge-secondary badge__plugin">NPM</span>
+<span style="font-size: 16px;" class="p-2 my-2 badge badge-secondary badge__plugin">BEM</span>
+<span style="font-size: 16px;" class="p-2 my-2 badge badge-secondary badge__plugin">Responsive Web Design</span></p>
+
+<h2 id="projects">Projects</h2>
+<hr />
+
+<ul>
+  <li><a href="https://github.com/williamcanin/typing-jekyll-template" target="_blank">Typing Jekyll Template</a> - Typing, is a template for Jekyll built especially for those who want to have a blog and pages quickly and lightly.</li>
+</ul>
+:ET
