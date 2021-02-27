@@ -28,9 +28,22 @@ twitter_username: mfiteclub
 github_username:  fiteclub
 
 # Build settings
-theme: jekyll-theme-console
+# theme: jekyll-theme-console
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+
+
 plugins:
   - jekyll-feed
+  - jekyll-coffeescript
+
+sass:
+  sass_dir: _sass
+  style: compressed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
