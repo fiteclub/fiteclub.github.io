@@ -3,6 +3,11 @@
   src: url('/assets/fonts/DOTMBold.TTF');
 }
 
+@font-face {
+  font-family: 'terminal';
+  src: url('/assets/fonts/Web437_IBM_EGA_8x14.woff');
+}
+
 * {
   box-sizing: border-box;
 }
@@ -62,4 +67,10 @@ body {
 
 .current {
   color: green;
+}
+
+.crtframe {
+  background-color: #000;
+  background: url('/assets/img/crt-bezel2.png');
+  background-repeat: no-repeat
 }
