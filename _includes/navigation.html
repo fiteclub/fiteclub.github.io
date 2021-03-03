@@ -1,7 +1,13 @@
-<div class="pane">
-<nav>
-  {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" class="button{% if page.url == item.link %} current{% endif %}">{{ item.name }}</a>
-  {% endfor %}
-</nav>
+<div>
+  <div class = "topnav">
+  <nav>
+    {% for item in site.data.navigation %}
+      <a href="{{ item.link }}" class="kbc-button kbc-button-secondary{% if page.url == item.link %} kbc-button-success active{% endif %}">
+        {{ item.name }}
+      </a>
+    {% endfor %}
+  </nav>
+  <div class ="filler">Matt Fite</div>
+  <div class="right-buttonsn"><a href="https://github.com/{{ site.github_username }}" class="kbc-button"><img src="assets/img/GitHub-Mark-32px.png" alt="github" style="vertical-align:middle"></a> </div>
+  </div>
 </div>
