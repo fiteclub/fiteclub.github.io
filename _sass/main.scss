@@ -1,6 +1,8 @@
 @font-face {
   font-family: 'dotmatrix';
-  src: url('/assets/fonts/DOTMATRI.TTF');
+  src: url('/assets/fonts/dot_matrix/DOTMATRI.TTF');
+  font-weight: 950;
+  // src: url('/assets/fonts/spotted_rail_ticket/spotted-rail-ticket.otf');
 }
 
 @font-face {
@@ -71,33 +73,6 @@ body {
   .topnav {float: none;}
 }
 
-// /* The sidebar menu */
-// .sidenav {
-//   height: 100%; /* Full-height: remove this if you want "auto" height */
-//   width: 200px; /* Set the width of the sidebar */
-//   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-//   z-index: 1; /* Stay on top */
-//   top: 0; /* Stay at the top */
-//   left: 0;
-//   background-color: #111; /* Black */
-//   overflow-x: hidden; /* Disable horizontal scroll */
-//   padding-top: 20px;
-// }
-
-// /* The navigation menu links */
-// .sidenav a {
-//   padding: 6px 8px 6px 16px;
-//   text-decoration: none;
-//   font-size: 25px;
-//   color: #818181;
-//   display: block;
-// }
-
-// /* When you mouse over the navigation links, change their color */
-// .sidenav a:hover {
-//   color: #f1f1f1;
-// }
-
 /* Style page content */
 .content {
   // margin-left: 200px; /* Same as the width of the sidebar */
@@ -110,23 +85,14 @@ body {
 
 .dotmatrix {
   padding: 10px 70px 10px;
-  font-family: 'dotmatrix', sans-serif;
+  font-family: 'dotmatrix';
+  font-size: 20px;
   background-image: url('/assets/img/DotMatrixPaper.png');
   background-repeat: repeat;
   background-attachment: local;
   background-size: cover;
   height: 100%;
 }
-
-// /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-// @media screen and (max-height: 450px) {
-//   .sidenav {padding-top: 15px;}
-//   .sidenav a {font-size: 18px;}
-// }
-
-// .current {
-//   color: green;
-// }
 
 .crtframe {
   top: 60px; /* Add a top margin to avoid content overlay */
