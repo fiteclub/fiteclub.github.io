@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'dotmatrix';
-  src: url('/assets/fonts/DOTMBold.TTF');
+  src: url('/assets/fonts/DOTMATRI.TTF');
 }
 
 @font-face {
@@ -52,6 +52,7 @@ body {
 
 .filler {
   flex-grow: 1;
+  background: repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 2px);
 }
 
 .right-buttons {
@@ -130,7 +131,7 @@ body {
 .crtframe {
   top: 60px; /* Add a top margin to avoid content overlay */
   z-index: 10;
-  position: relative;
+  position: fixed;
   width: 100%;
   // height: 100%;
   border: 5px solid transparent;
