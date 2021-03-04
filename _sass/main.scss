@@ -1,10 +1,18 @@
 @font-face {
   font-family: 'dotmatrix';
+  font-style: normal;
   src: url('/assets/fonts/dot_matrix/DOTMATRI.TTF');
-  font-weight: 950;
+  font-weight: normal;
   // src: url('/assets/fonts/spotted_rail_ticket/spotted-rail-ticket.otf');
 }
 
+@font-face {
+  font-family: 'dotmatrixbold';
+  font-style: normal;
+  src: url('/assets/fonts/dot_matrix/DOTMBold.TTF');
+  font-weight: normal;
+  // src: url('/assets/fonts/spotted_rail_ticket/spotted-rail-ticket.otf');
+}
 @font-face {
   font-family: 'terminal';
   src: url('/assets/fonts/Web437_IBM_EGA_8x14.woff');
@@ -32,6 +40,7 @@ body {
   // padding: 0;
   overflow: hidden;
   background-color: #333;
+  background-image: url('/assets/img/topbar.png');
 }
 
 .topnav {float: left;}
@@ -84,14 +93,28 @@ body {
 }
 
 .dotmatrix {
+  margin-top: 35px;
   padding: 10px 70px 10px;
   font-family: 'dotmatrix';
   font-size: 20px;
   background-image: url('/assets/img/DotMatrixPaper.png');
-  background-repeat: repeat;
-  background-attachment: local;
-  background-size: cover;
+  background-repeat: repeat-y;
+  background-attachment: scroll;
+  background-size: 100%;
   height: 100%;
+  overflow: hidden;
+}
+
+p {
+  font-family: 'dotmatrix';
+  font-weight: normal;
+  font-style: normal;
+}
+
+strong{
+  font-family: 'dotmatrixbold';
+  font-weight: bold;
+  font-style: normal;
 }
 
 .crtframe {
