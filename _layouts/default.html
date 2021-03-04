@@ -1,21 +1,16 @@
 <!doctype html>
 <html>
-  <head>
-    <title>{{ page.title }}</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="shortcut icon" href="/assets/img/favicon.ico">
-    {% feed_meta %}
-    {% seo %}
-  </head>
+  {% include head.html %}
   <body>
-      <div class="topnav">
+      <div id="topnav">
         {% include navigation.html %}
       </div>
-      <div class="content terminal crt crtframe">
-        {{ content }}
+      <div id ="monitor">
+        <div id="bezel">
+          <div id="screen">
+            {{ content }}
+          </div>
+        </div>
       </div>
-    </div>
   </body>
 </html>

@@ -33,16 +33,13 @@ body {
 }
 
 /* The top menu */
-.topnav {
+#topnav {
   display: flex;
-  z-index: 5;
-  // list-style-type: none;
+  z-index: 10;
   top: 0;
   width: 100%;
   height: 80px;
   position: fixed;
-  // margin: 0;
-  // padding: 0;
   overflow: hidden;
   background-color: #333;
   background-image: url('/assets/img/topbar.png');
@@ -63,7 +60,6 @@ body {
 
 .worn {
   content: '\A';
-  // position: absolute;
   opacity:90;
   background: url("/assets/img/wornkey.jpg");
 }
@@ -89,19 +85,117 @@ body {
   .topnav {float: none;}
 }
 
+/* Screen frame */
+#monitor {
+  margin-top: 60px;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+	// align-items: center;
+  background-color: black;
+  background-image: radial-gradient(
+    rgba(10, 10, 10, 0.75), black 120%
+  );
+  border-bottom: 0px;
+  padding:0;
+}
+
+#bezel {
+  // z-index: 9;
+  box-sizing:border-box;
+  position: relative;
+  padding: 10px;
+  width: 100%;
+  height: 95vh;
+  border: 30px solid transparent;
+  border-image-source: url('/assets/img/bezel.png');
+  border-image-slice: 30 fill;
+  border-image-outset: 0;
+  overflow: hidden;
+}
+
+
+// #screen:before {
+//   content: " ";
+//   display: block;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+//   background: linear-gradient(
+//       to bottom,
+//       rgba(18, 16, 16, 0) 50%,
+//       rgba(0, 0, 0, 0.25) 50%
+//   );
+//   background-size: 100% 8px;
+//   z-index: 2;
+//   pointer-events: none;
+// }
+
+#screen, pre{
+  font-family: 'terminal';
+  font: 1.3rem terminal, monospace;
+}
+
+#screen::before {
+  box-sizing:inherit;
+}
+
+#screen {
+  z-index: 2;
+  position: relative;
+  // font-family: 'terminal';
+  // font: 1.3rem terminal, monospace;
+  height: 100vh;
+  // overflow: hidden;
+  padding: 2rem;
+  color: white;
+  // font: 1.3rem Inconsolata, monospace;
+  // text-shadow: 0 0 5px;
+  // &::after {
+  //   content: "";
+  //   position: relative;
+  //   top: 0;
+  //   left: 0;
+  //   bottom: 0;
+  //   width: 100vw;
+  //   height: 100vh;
+  //   background: repeating-linear-gradient(
+  //     0deg,
+  //     rgba(black, 0.15),
+  //     rgba(black, 0.15) 1px,
+  //     transparent 1px,
+  //     transparent 2px
+  //   );
+  //   pointer-events: none;
+  // }
+}
+
+::selection {
+  background: #0080FF;
+  text-shadow: none;
+}
+
 /* Style page content */
 .content {
   // margin-left: 200px; /* Same as the width of the sidebar */
-  margin-top: 35px; /* Add a top margin to avoid content overlay */
-  padding: 0px 10px;
-  background-color: #000;
+  // margin-top: 35px; /* Add a top margin to avoid content overlay */
+  // padding: 0px 10px;
+  // background-color: #000;
   // background: url('/assets/img/bezel.png');
   // background-repeat: no-repeat
 }
 
-.dotmatrix {
+#dotmatrix {
+  z-index: 12;
+  position: fixed;
   margin-top: 35px;
-  padding: 10px 70px 10px;
+  padding: 10px 70px 10px 70px;
   font-family: 'dotmatrix';
   font-size: 20px;
   background-image: url('/assets/img/DotMatrixPaper.png');
@@ -122,27 +216,6 @@ strong{
   font-family: 'dotmatrixbold';
   font-weight: bold;
   font-style: normal;
-}
-
-.crtframe {
-  top: 65px; /* Add a top margin to avoid content overlay */
-  z-index: 20;
-  // position: fixed;
-  // width: 100%;
-  // height: 100%;
-  border: 10px solid transparent;
-  padding: 15px;
-  border-image: url('/assets/img/bezel.png') 30;
-  // border-image-source: url('/assets/img/bezel.png');
-  // border-image-slice: 30 fill;
-  // border-image-outset: 0;
-  // overflow: hidden;
-  // z-index: 99;
-  // position: absolute;
-  // background: url('/assets/img/bezel.png');
-  // background-repeat: no-repeat;
-  // background-attachment: fixed;
-  // background-size: 100% 100%;
 }
 
 .logobutton {

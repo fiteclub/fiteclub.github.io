@@ -1,20 +1,17 @@
 <!doctype html>
 <html>
-  <head>
-    <title>{{ page.title }}</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    {% feed_meta %}
-    {% seo %}
-  </head>
+  {% include head.html %}
   <body>
-    <div class="topnav">
+    <div id="topnav">
       {% include navigation.html %}
     </div>
-    <div class="dotmatrix">
-      {{ content }}
-    </div>
+      <div id ="monitor">
+        <div id="bezel">
+          <div id="dotmatrix">
+              {{ content }}
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
