@@ -18,6 +18,11 @@
   src: url('/assets/fonts/Web437_IBM_EGA_8x14.woff');
 }
 
+@font-face {
+  font-family: 'handwriting';
+  src: url('/assets/fonts/Rock_Salt/RockSalt-Regular.ttf');
+}
+
 * {
   box-sizing: border-box;
 }
@@ -32,15 +37,17 @@ body {
   display: flex;
   z-index: 5;
   // list-style-type: none;
-  overflow: hidden;
   top: 0;
   width: 100%;
+  height: 80px;
   position: fixed;
   // margin: 0;
   // padding: 0;
   overflow: hidden;
   background-color: #333;
   background-image: url('/assets/img/topbar.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .topnav {float: left;}
@@ -63,7 +70,7 @@ body {
 
 .filler {
   flex-grow: 1;
-  background: repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 2px);
+  // background: repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 2px);
 }
 
 .right-buttons {
@@ -88,8 +95,8 @@ body {
   margin-top: 35px; /* Add a top margin to avoid content overlay */
   padding: 0px 10px;
   background-color: #000;
-  background: url('/assets/img/bezel.png');
-  background-repeat: no-repeat
+  // background: url('/assets/img/bezel.png');
+  // background-repeat: no-repeat
 }
 
 .dotmatrix {
@@ -101,7 +108,7 @@ body {
   background-repeat: repeat-y;
   background-attachment: scroll;
   background-size: 100%;
-  height: 100%;
+  // height: cover;
   overflow: hidden;
 }
 
@@ -118,23 +125,41 @@ strong{
 }
 
 .crtframe {
-  top: 60px; /* Add a top margin to avoid content overlay */
-  z-index: 10;
-  position: fixed;
-  width: 100%;
+  top: 65px; /* Add a top margin to avoid content overlay */
+  z-index: 20;
+  // position: fixed;
+  // width: 100%;
   // height: 100%;
-  border: 5px solid transparent;
-  border-image-source: url('/assets/img/bezel.png');
-  border-image-slice: 30 fill;
-  border-image-outset: 0;
-  overflow: hidden;
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url('/assets/img/bezel.png') 30;
+  // border-image-source: url('/assets/img/bezel.png');
+  // border-image-slice: 30 fill;
+  // border-image-outset: 0;
+  // overflow: hidden;
   // z-index: 99;
   // position: absolute;
   // background: url('/assets/img/bezel.png');
   // background-repeat: no-repeat;
-  // background-attachment: cover;
+  // background-attachment: fixed;
+  // background-size: 100% 100%;
 }
 
 .logobutton {
-  height: 30px;
+  height: 25px;
+}
+
+.buttontape {
+  background: url("/assets/img/tape-36x92.png"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.homebutton {
+  margin-right: 7px;
+  // padding: 0px 10px 0px 10px;
+  font-family: 'handwriting';
+  font-weight: bold;
+  color:#000;
+  // font-size: 16px;
 }

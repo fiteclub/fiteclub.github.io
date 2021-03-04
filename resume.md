@@ -11,11 +11,11 @@ layout: dotmatrix
 
 **Technologies:** Rails, PostgreSQL, Git, vim, Linux, KVM, Hyper-V, Heroku, Raspberry Pi, Arduino, Renegade BBS, and the Oxford comma
 
-**Skills:** Data redundancy, information security, remote management, commercial display, virtualization, scripting & automation, video surveillance
+**Skills:** Data redundancy, information security, remote management, commercial display, virtualization, scripting & automation, video surveillance, :wq
 
 **Experience:**
 
-**{ 1999-2003 }** *Lead Developer, Systems Administrator – Shady Lane Farms*
+**{ 1999-2005 }** *Lead Developer, Systems Administrator – Shady Lane Farms*
 >\>> Developed and maintained a relational database application for inventory control, accounts payable and accounts receivable\
 \>> Acted as Network Administrator, hardware & software Support, systems analyst\
 \>> Managed inventory and logistics

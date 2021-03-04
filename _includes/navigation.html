@@ -1,8 +1,11 @@
 <div>
   <div class = "topnav">
   <nav>
+    <a href="/" class="kbc-button kbc-button-sm kbc-button-secondary {% if page.url == '/' %} kbc-button-success active{% endif %} buttontape">
+      <div class="homebutton">{{ site.default_nav_title }}</div>
+    </a>
     {% for item in site.data.navigation %}
-      <a href="{{ item.link }}" class="kbc-button kbc-button-secondary{% if page.url == item.link %} kbc-button-success active{% endif %}">
+      <a href="{{ item.link }}" class="kbc-button kbc-button-secondary kbc-button-sm {% if page.url == item.link %} kbc-button-success active{% endif %}">
         {{ item.name }}
       </a>
     {% endfor %}
