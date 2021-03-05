@@ -25,6 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://fite.dev" # the base hostname & protocol for your site, e.g. http://example.com
 default_nav_title: fite.dev
+nav_slogan: "386SX 2MB PERSONAL COMPUTER"
 twitter_username: mfiteclub
 github_username: fiteclub
 linkedin_custom_url_slug: fiteclub
@@ -37,6 +38,9 @@ plugins:
   - jekyll-seo-tag
 
 collections:
+  projects:
+    output: true
+    sort_by: title
   authors:
     output: true
 
@@ -60,6 +64,11 @@ defaults:
       type: "resume"
     values:
       layout: "dotmatrix"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "default"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

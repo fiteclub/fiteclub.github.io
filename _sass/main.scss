@@ -154,14 +154,14 @@ body {
 }
 
 #screen {
-  z-index: 2;
+  z-index: 999;
+  overflow: scroll;
   position: relative;
+  height: 75vh;
+  margin-top: 2em;
+  color: white;
   // font-family: 'terminal';
   // font: 1.3rem terminal, monospace;
-  height: 100vh;
-  // overflow: hidden;
-  padding: 2rem;
-  color: white;
   // font: 1.3rem Inconsolata, monospace;
   // text-shadow: 0 0 5px;
   // &::after {
