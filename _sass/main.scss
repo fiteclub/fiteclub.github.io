@@ -65,7 +65,14 @@ body {
 }
 
 .filler {
+  // z-index: 9;
   flex-grow: 1;
+  float: left;
+  white-space: nowrap;
+  // shape-outside: inset(20px 50px 10px 0 round 50px) margin-box;
+  // background-color:#FFF;
+  // border: 2px solid black;
+  // border-radius: 10px;
   // background: repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 2px);
 }
 
@@ -219,7 +226,7 @@ strong{
 }
 
 .logobutton {
-  height: 25px;
+  height: 20px;
 }
 
 .buttontape {
@@ -230,9 +237,18 @@ strong{
 
 .homebutton {
   margin-right: 7px;
-  // padding: 0px 10px 0px 10px;
+  // padding: -5px -10px -5px -10px;
   font-family: 'handwriting';
   font-weight: bold;
   color:#000;
-  // font-size: 16px;
+  // font-size: 18px;
 }
+
+.slogan {
+  font-family: 'Righteous';
+  padding: 30px 20px 20px 0px;
+  float: right;
+  // vertical-align: bottom;
+  font-size: 14px;
+  color: #111;
+} 
