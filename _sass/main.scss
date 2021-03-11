@@ -27,9 +27,46 @@
   box-sizing: border-box;
 }
 
+a:link, a:visited {
+  color: #6871ff;
+  padding: 2px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  color: #000000;
+  background-color: #00c200;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+}
+.tab { margin-left: 40px; }
+
+.green { color: #00c200; }
+
+.bright-blue { color: #0225c7; }
+
+.white { color: #c7c7c7; }
+
+.cursor {
+  animation: blink 1s linear infinite alternate;
+}
+
+.commandline {
+  content: "";
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* The top menu */
@@ -40,57 +77,92 @@ body {
   width: 100%;
   height: 80px;
   position: fixed;
-  overflow: hidden;
+  // overflow: hidden;
   background-color: #333;
   background-image: url('/assets/img/topbar.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
-.topnav {float: left;}
-
-.topnav a {
+ul.topnav {
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  display: inline;
 }
 
-.worn {
-  content: '\A';
-  opacity:90;
-  background: url("/assets/img/wornkey.jpg");
+li {
+  display: inline;
 }
 
-.filler {
-  // z-index: 9;
+ul.topnav li a {
+  float: left;
+  // // display: block;
+  // color: white;
+  // text-align: center;
+  // vertical-align: middle;
+  height: 33px;
+  min-width: 70pt;
+  // padding: 14px 16px;
+  // text-decoration: none;
+}
+
+.topnav .filler {
   flex-grow: 1;
   float: left;
   white-space: nowrap;
-  // shape-outside: inset(20px 50px 10px 0 round 50px) margin-box;
-  // background-color:#FFF;
-  // border: 2px solid black;
-  // border-radius: 10px;
-  // background: repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 2px);
 }
 
-.right-buttons {
+.topnav .right-buttons {
   padding-right: 10px;
-  // width: 50px;
 }
 
-// .topnav a:hover:not(.active) {background-color: #111;}
-
-// .topnav a.active {background-color: #4CAF50;}
-
-.topnav right {float: right;}
+.topnav .right {float: right;}
 
 @media screen and (max-width: 600px) {
   .topnav right, 
   .topnav {float: none;}
+  nav[role="full-horizontal"] {
+    ul > li {
+      width: 100%;
+    }
+  }
 }
+
+.logobutton {
+  height: 20px;
+  vertical-align: middle;
+}
+
+.logobutton .github {
+
+}
+
+.buttontape {
+  background: url("/assets/img/tape-36x92.png"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.homebutton {
+  margin-right: 7px;
+  // padding: -5px -10px -5px -10px;
+  font-family: 'handwriting';
+  font-weight: bold;
+  color:#000;
+  // font-size: 18px;
+}
+
+.slogan {
+  font-family: 'Righteous';
+  padding: 30px 20px 20px 0px;
+  float: right;
+  // vertical-align: bottom;
+  font-size: 14px;
+  color: #111;
+} 
 
 /* Screen frame */
 #monitor {
@@ -154,7 +226,7 @@ body {
 }
 
 #screen {
-  z-index: 999;
+  z-index: 998;
   overflow: auto;
   position: relative;
   height: 75vh;
@@ -199,56 +271,31 @@ body {
 }
 
 #dotmatrix {
-  z-index: 12;
-  position: fixed;
-  margin-top: 35px;
+  z-index: 999;
+  overflow: auto;
+  position: relative;
+  height: 80vh;
+  margin-top: 2em;
   padding: 10px 70px 10px 70px;
   font-family: 'dotmatrix';
   font-size: 20px;
   background-image: url('/assets/img/DotMatrixPaper.png');
-  background-repeat: repeat-y;
-  background-attachment: scroll;
+  // background-repeat: repeat-y;
+  // background-attachment:scroll; 
   background-size: 100%;
   // height: cover;
-  overflow: hidden;
 }
 
-p {
+p.dotmatrix {
   font-family: 'dotmatrix';
   font-weight: normal;
   font-style: normal;
 }
 
-strong{
+strong.dotmatrix {
   font-family: 'dotmatrixbold';
   font-weight: bold;
   font-style: normal;
 }
 
-.logobutton {
-  height: 20px;
-}
 
-.buttontape {
-  background: url("/assets/img/tape-36x92.png"); 
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.homebutton {
-  margin-right: 7px;
-  // padding: -5px -10px -5px -10px;
-  font-family: 'handwriting';
-  font-weight: bold;
-  color:#000;
-  // font-size: 18px;
-}
-
-.slogan {
-  font-family: 'Righteous';
-  padding: 30px 20px 20px 0px;
-  float: right;
-  // vertical-align: bottom;
-  font-size: 14px;
-  color: #111;
-} 

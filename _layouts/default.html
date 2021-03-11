@@ -1,16 +1,16 @@
 <!doctype html>
 <html>
   {% include head.html %}
+  <header id="topnav">
+    {% include navigation.html %}
+  </header>
   <body>
-      <div id="topnav">
-        {% include navigation.html %}
-      </div>
-      <div id ="monitor">
-        <div id="bezel">
-          <div id="screen">
-            {{ content }}
-          </div>
+    <div id ="monitor">
+      <div id="bezel">
+        <div id="screen">
+          {{ content }}
         </div>
       </div>
+    </div>
   </body>
 </html>
