@@ -142,7 +142,7 @@
   opacity: 0;
   z-index: 2;
   pointer-events: none;
-  animation: flicker 0.35s infinite;
+  animation: flicker 15.00s infinite;
 }
 .crt::before {
   content: " ";

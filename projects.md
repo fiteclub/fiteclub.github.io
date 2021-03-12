@@ -7,6 +7,7 @@ title: Projects
 </p>
 <br>
 <h1>Projects</h1>
+<span class="cyan">* Live projects hosted on Heroku -- may take a minute to spin up *</span>
 <ul>
   {% for project in site.projects %}
       <h2>{{ project.title }}</h2>
