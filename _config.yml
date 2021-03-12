@@ -21,7 +21,7 @@
 title: Matt Fite
 email: matt@fite.dev
 description: >- # this means to ignore newlines until "baseurl:"
-Matt Fite
+  Matt Fite
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://fite.dev" # the base hostname & protocol for your site, e.g. http://example.com
 default_nav_title: fite.dev
