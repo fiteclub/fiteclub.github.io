@@ -1,6 +1,6 @@
 ---
 title: Resume
-layout: dotmatrix
+display_type: dotmatrix
 ---
 # Matt Fite
 ### matt@fite.dev &nbsp;&nbsp;&nbsp;&nbsp; github.com/fiteclub

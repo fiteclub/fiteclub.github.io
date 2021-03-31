@@ -1,5 +1,7 @@
 ---
 title: Projects
+monitor_effect: crt
+display_type: screen
 ---
 <p>
   <span class="green">fite_dev</span><span class="white">:</span><span class="bright-blue">~/projects</span><span class="white">$ ls -la</span>

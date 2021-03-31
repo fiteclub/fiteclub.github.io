@@ -5,9 +5,9 @@
     {% include navigation.html %}
   </header>
   <body>
-    <div id ="monitor" class="crt">
+    <div id ="monitor" class="{{ page.monitor_effect }}">
       <div id="bezel">
-        <div id="screen">
+        <div id="{{ page.display_type }}">
           {{ content }}
         </div>
       </div>
