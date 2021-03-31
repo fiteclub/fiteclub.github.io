@@ -167,22 +167,12 @@ ul.topnav li a {
 }
 
 @media screen and (max-width: 800px) {
-  // .topnav right, 
-  // .topnav {float: none;}
-  // nav[role="full-horizontal"] {
-  //   ul > li {
-  //     width: 100%;
-  //   }
-  // }
   ul.topnav {
     display:none;
   }
-  // .right-buttons {
-  //   display:none;
-  // }
-  // #hamburger {
-  //   display:contents
-  // }
+  #hamburger {
+    display: inline-block;
+  }
 }
 
 @media screen and (max-width:600px) {
@@ -215,10 +205,16 @@ ul.topnav li a {
 .homebutton {
   margin-right: 7px;
   // padding: -5px -10px -5px -10px;
+  // font-family: 'handwriting';
+  // font-weight: bold;
+  // color:#000;
+  // font-size: 18px;
+}
+
+.handwritten {
   font-family: 'handwriting';
   font-weight: bold;
   color:#000;
-  // font-size: 18px;
 }
 
 .slogan {
@@ -231,11 +227,16 @@ ul.topnav li a {
 } 
 
 /* Hamburger open button */
-#hamburger{
-  height: 20px;
-  vertical-align: middle;
-  font-size:30px;
-  cursor:pointer;
+#hamburger {
+  // height: 30px;
+  // vertical-align: middle;
+  // font-size:30px;
+  // padding: 0;
+  // overflow: hidden;
+  float: left;
+  display: hidden;
+  // margin: 0;
+  // cursor:pointer;
 }
 
 /* Side Nav Hamburger */

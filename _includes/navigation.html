@@ -1,9 +1,15 @@
   <nav>
+    <span id="hamburger">
+    <a class="kbc-button kbc-button-sm" onclick="openNav()">
+      <div class="handwritten"><img src="../assets/img/hamburg.png" alt="github" class="logobutton"></div>
+    </a>
+    </span>
+    {% include sidenav.html %}
     <ul class="topnav">
       <li><a href="/" class="kbc-button kbc-button-sm kbc-button-secondary {% if page.url == '/' %} kbc-button-success active{% endif %} buttontape">
-        <div class="homebutton">{{ site.default_nav_title }}</div>
+        <div class="homebutton handwritten">{{ site.default_nav_title }}</div>
       </a></li>
-    {% for item in site.data.navigation %}
+      {% for item in site.data.navigation %}
       <li><a href="{{ item.link }}" class="kbc-button kbc-button-secondary kbc-button-sm {% if page.url == item.link %} kbc-button-success active{% endif %}">
         {{ item.name }}
       </a></li>

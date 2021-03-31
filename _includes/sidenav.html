@@ -1,10 +1,7 @@
-<span id="hamburger" onclick="openNav()" class="kbc-button kbc-button-xs">
-  <img src="../assets/img/linkedin-logo-32px.png" alt="github" class="logobutton">
-</span>
 <div id="sidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn kbc-button-xs" onclick="closeNav()">&times;</a>
-  <li><a href="/" class="kbc-button kbc-button-sm kbc-button-secondary {% if page.url == '/' %} kbc-button-success active{% endif %} buttontape">
-    <div class="homebutton">{{ site.default_nav_title }}</div>
+  <a href="javascript:void(0)" class="kbc-button kbc-button-xs closebtn " onclick="closeNav()">&times;</a>
+  <li><a href="/" class="kbc-button kbc-button-xs kbc-button-secondary {% if page.url == '/' %} kbc-button-success active{% endif %} buttontape">
+    <div class="homebutton handwritten">{{ site.default_nav_title }}</div>
   </a></li>
   {% for item in site.data.navigation %}
   <li><a href="{{ item.link }}" class="kbc-button kbc-button-secondary kbc-button-sm {% if page.url == item.link %} kbc-button-success active{% endif %}">
