@@ -41,15 +41,8 @@ collections:
   projects:
     output: true
     sort_by: title
-  authors:
-    output: true
 
 defaults:
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
   - scope:
       path: ""
       type: "posts"

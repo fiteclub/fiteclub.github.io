@@ -3,7 +3,6 @@
   font-style: normal;
   src: url('/assets/fonts/dot_matrix/DOTMATRI.TTF');
   font-weight: normal;
-  // src: url('/assets/fonts/spotted_rail_ticket/spotted-rail-ticket.otf');
 }
 
 @font-face {
@@ -11,7 +10,6 @@
   font-style: normal;
   src: url('/assets/fonts/dot_matrix/DOTMBold.TTF');
   font-weight: normal;
-  // src: url('/assets/fonts/spotted_rail_ticket/spotted-rail-ticket.otf');
 }
 @font-face {
   font-family: 'terminal';
@@ -45,24 +43,38 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Create two equal columns that floats next to each other */
+/* Create two equal columns that float next to each other */
 .archey-info {
   float: left;
   width: 70%;
   padding: 10px;
-  // height: 300px; /* Should be removed. Only for demonstration */
-  // vertical-align: middle;
+  display: flex;
+  flex-shrink: 1;
 }
 
 .archey-face {
   float: left;
-  width: 30%;
-  padding: 10px 10px 10px 70px;
-  flex-shrink: 0;
-  min-width: 30%;
-  min-height: 100%;
-  // background-image: url('/assets/img/nice_face.gif');
-  // background-repeat: no-repeat;
+  // width: 30%;
+  // height: auto;
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  flex-shrink: 1;
+  // max-width: 30%
+  // min-width: 30%;
+  // min-height: 100%;
+}
+
+img.archey {
+  height: 20vh;
+  // width: 20vw;
+  // size: 20vh;
+  // max-height: 20vh;
+  // max-width: 40vw;
+  // height: auto;
+  display: flex;
+  flex-shrink: 1;
+  opacity: 0.6;
+  width:100%;
 }
 
 /* Clear floats after the columns */
@@ -74,8 +86,16 @@ body {
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
+  .archey-face {
+    // width: 100%;
+    // padding: 0;
+    // display: none;
+  }
+  .archey-info {
+    // width: 100%;
+  }
+  img.archey {
+    // min-height: 150px;
   }
 }
 
@@ -115,7 +135,6 @@ body {
   width: 100%;
   height: 80px;
   position: fixed;
-  // overflow: hidden;
   background-color: #333;
   background-image: url('/assets/img/topbar.png');
   background-repeat: no-repeat;
@@ -137,14 +156,8 @@ li {
 
 ul.topnav li a {
   float: left;
-  // // display: block;
-  // color: white;
-  // text-align: center;
-  // vertical-align: middle;
   height: 30px;
   min-width: 64pt;
-  // padding: 14px 16px;
-  // text-decoration: none;
 }
 
 .topnav {
@@ -204,11 +217,6 @@ ul.topnav li a {
 
 .homebutton {
   margin-right: 7px;
-  // padding: -5px -10px -5px -10px;
-  // font-family: 'handwriting';
-  // font-weight: bold;
-  // color:#000;
-  // font-size: 18px;
 }
 
 .handwritten {
@@ -221,22 +229,14 @@ ul.topnav li a {
   font-family: 'Righteous';
   padding: 30px 20px 20px 0px;
   float: right;
-  // vertical-align: bottom;
   font-size: 14px;
   color: #111;
 } 
 
 /* Hamburger open button */
 #hamburger {
-  // height: 30px;
-  // vertical-align: middle;
-  // font-size:30px;
-  // padding: 0;
-  // overflow: hidden;
   float: left;
   display: hidden;
-  // margin: 0;
-  // cursor:pointer;
 }
 
 /* Side Nav Hamburger */
@@ -270,15 +270,8 @@ ul.topnav li a {
   position: absolute;
   top: 1em;
   right: 5px;
-  // font-size: 36px;
   margin-left: 50px;
 }
-
-// @media screen and (max-height: 450px) {
-//   .sidenav {padding-top: 15px;}
-//   .sidenav a {font-size: 18px;}
-// }
-
 
 /* Screen frame */
 #monitor {
@@ -290,7 +283,6 @@ ul.topnav li a {
   left: 0;
   right: 0;
   bottom: 0;
-	// align-items: center;
   background-color: black;
   background-image: radial-gradient(
     rgba(10, 10, 10, 0.75), black 120%
@@ -313,28 +305,10 @@ ul.topnav li a {
   overflow: hidden;
 }
 
-
-// #screen:before {
-//   content: " ";
-//   display: block;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   bottom: 0;
-//   right: 0;
-//   background: linear-gradient(
-//       to bottom,
-//       rgba(18, 16, 16, 0) 50%,
-//       rgba(0, 0, 0, 0.25) 50%
-//   );
-//   background-size: 100% 8px;
-//   z-index: 2;
-//   pointer-events: none;
-// }
-
 #screen, pre{
   font-family: 'terminal';
   font: 1.3rem terminal, monospace;
+  font-size: 2vmin;
 }
 
 #screen::before {
@@ -349,27 +323,6 @@ ul.topnav li a {
   margin-top: 2em;
   color: white;
   padding: 1em;
-  // font-family: 'terminal';
-  // font: 1.3rem terminal, monospace;
-  // font: 1.3rem Inconsolata, monospace;
-  // text-shadow: 0 0 5px;
-  // &::after {
-  //   content: "";
-  //   position: relative;
-  //   top: 0;
-  //   left: 0;
-  //   bottom: 0;
-  //   width: 100vw;
-  //   height: 100vh;
-  //   background: repeating-linear-gradient(
-  //     0deg,
-  //     rgba(black, 0.15),
-  //     rgba(black, 0.15) 1px,
-  //     transparent 1px,
-  //     transparent 2px
-  //   );
-  //   pointer-events: none;
-  // }
 }
 
 ::selection {
@@ -379,12 +332,6 @@ ul.topnav li a {
 
 /* Style page content */
 .content {
-  // margin-left: 200px; /* Same as the width of the sidebar */
-  // margin-top: 35px; /* Add a top margin to avoid content overlay */
-  // padding: 0px 10px;
-  // background-color: #000;
-  // background: url('/assets/img/bezel.png');
-  // background-repeat: no-repeat
 }
 
 #dotmatrix {
@@ -397,10 +344,7 @@ ul.topnav li a {
   font-family: 'dotmatrix';
   font-size: 20px;
   background-image: url('/assets/img/DotMatrixPaper.png');
-  // background-repeat: repeat-y;
-  // background-attachment:scroll; 
   background-size: 100%;
-  // height: cover;
 }
 
 p.dotmatrix {
