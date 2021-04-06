@@ -54,27 +54,16 @@ body {
 
 .archey-face {
   float: left;
-  // width: 30%;
-  // height: auto;
   padding: 10px 10px 10px 10px;
   display: flex;
   flex-shrink: 1;
-  // max-width: 30%
-  // min-width: 30%;
-  // min-height: 100%;
 }
 
 img.archey {
   height: 20vh;
-  // width: 20vw;
-  // size: 20vh;
-  // max-height: 20vh;
-  // max-width: 40vw;
-  // height: auto;
   display: flex;
   flex-shrink: 1;
   opacity: 0.6;
-  // width:100%;
 }
 
 /* Clear floats after the columns */
@@ -82,21 +71,6 @@ img.archey {
   content: "";
   display: table;
   clear: both;
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .archey-face {
-    // width: 100%;
-    // padding: 0;
-    // display: none;
-  }
-  .archey-info {
-    // width: 100%;
-  }
-  img.archey {
-    // min-height: 150px;
-  }
 }
 
 
