@@ -180,7 +180,6 @@ ul.topnav li a {
 }
 
 .logobutton .github {
-
 }
 
 .buttontape {
@@ -331,6 +330,31 @@ strong.dotmatrix {
   font-family: 'dotmatrixbold';
   font-weight: bold;
   font-style: normal;
+}
+
+a.dotmatrix {
+  text-decoration: none;
+  color:black;
+  background-color: transparent;
+  padding: 0;
+}
+
+.pdf {
+  color:#fff;
+  float:right;
+  position: relative;
+  text-decoration: none;
+}
+
+.pdf img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.pdf a {
+  text-decoration: none;
+  padding: 0;
 }
 
 #footer {

@@ -2,8 +2,11 @@
 title: Resume
 display_type: dotmatrix
 ---
+<div class="pdf">
+  <a href="../assets/pdf/matt_fite.pdf" target="_blank"><img src="../assets/img/pdf-sticker-60x72.png" alt="view pdf"></a>
+</div>
 # Matt Fite
-### matt@fite.dev &nbsp;&nbsp;&nbsp;&nbsp; github.com/fiteclub
+### matt@fite.dev &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.com/fiteclub" class="dotmatrix">github.com/fiteclub</a>
 
 **{** *Curious <strong>*</strong> Creative <strong>*</strong> Conscientious <strong>*</strong> Meticulous <strong>*</strong> Tenacious <strong>*</strong> Self Learning <strong>*</strong> Adaptive <strong>*</strong> Veteran remote worker <strong>*</strong> Learning technology across multiple millennia* **}**
 
