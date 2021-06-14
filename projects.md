@@ -8,7 +8,7 @@ display_type: screen
 </p>
 <h2>Projects</h2>
 <span class="cyan">* Live projects hosted on Heroku -- may take a minute to spin up *</span>
-<ul>
+<ul class="terminal">
   {% for project in site.projects %}
       <h2>{{ project.title }}</h2>
       <p>{{ project.excerpt }}</p>

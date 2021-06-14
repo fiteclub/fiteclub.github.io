@@ -298,6 +298,10 @@ ul.topnav li a {
   padding: 1em;
 }
 
+.terminal, pre{
+  width: 80ch;
+}
+
 ::selection {
   background: #0080FF;
   text-shadow: none;
