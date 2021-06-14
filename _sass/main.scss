@@ -299,7 +299,7 @@ ul.topnav li a {
 }
 
 .terminal, pre{
-  width: 80ch;
+  max-width: 80ch;
 }
 
 ::selection {
