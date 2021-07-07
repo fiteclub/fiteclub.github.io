@@ -1,3 +1,7 @@
+{% assign archeyDateBoot = '1980-01-13' | date: '%s' %}
+{% assign archeyNowTimestamp = 'now' | date: '%s' %}
+{% assign archeyTimeDiff = archeyNowTimestamp | minus: archeyDateBoot %}
+{% assign archeyUpTime = archeyTimeDiff | divided_by: 3600 | divided_by: 24 %}
 <div>Last login: {{site.time}} on ttys003</div>
 <div class="archey-row">
   <div class="archey-face">
@@ -9,7 +13,7 @@
       <span class="cyan">Hostname:</span> fite_dev<br>
       <span class="cyan">Distro:</span> leenooks<br>
       <span class="cyan">Kernel:</span> 0.01<br>
-      <span class="cyan">Uptime:</span> 15,034 days<br>
+      <span class="cyan">Uptime:</span> {{ archeyUpTime | round }} days<br>
       <span class="cyan">Shell:</span> /bin/bash<br>
       <span class="cyan">Terminal:</span> superterm2000<br>
       <span class="cyan">CPU:</span> Intel 80386 CPU @ 12 MHz<br>
