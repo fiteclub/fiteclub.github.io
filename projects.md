@@ -9,7 +9,8 @@ display_type: screen
 <h2>Projects</h2>
 <span class="cyan">* Live projects hosted on Heroku -- may take a minute to spin up *</span>
 <ul class="terminal">
-  {% for project in site.projects %}
+  {% assign sorted_projects = site.projects | sort: 'priority' %}
+  {% for project in sorted_projects %}
       <h2>{{ project.title }}</h2>
       <p>{{ project.excerpt }}</p>
       <br>
