@@ -12,7 +12,7 @@ display_type: dotmatrix
 
 **Languages:** Ruby, Bash, HTML, CSS, C++, R:Base
 
-**Technologies:** Rails, PostgreSQL, Git, vim, Linux, KVM, Hyper-V, Heroku, Raspberry Pi, Arduino, Renegade BBS, and the Oxford comma
+**Technologies:** Rails, PostgreSQL, Git, vim, Linux, Docker, KVM, Hyper-V, Heroku, Raspberry Pi, Arduino, Renegade BBS, and the Oxford comma
 
 **Skills:** Data redundancy, information security, remote management, commercial display, virtualization, scripting & automation, video surveillance, :wq
 
