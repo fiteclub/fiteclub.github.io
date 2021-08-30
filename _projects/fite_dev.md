@@ -4,6 +4,4 @@ github_url: https://github.com/fiteclub/fiteclub.github.io
 production_url: https://fite.dev/
 priority: 2
 ---
-This website! Yes, this one!<br>
-[See it live!](https://fite.dev/)
-[Source code](https://github.com/fiteclub/fiteclub.github.io)
+This website! Yes, this one!

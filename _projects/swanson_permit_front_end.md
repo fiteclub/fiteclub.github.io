@@ -5,5 +5,3 @@ production_url: https://swanson-permit-front-end.herokuapp.com
 priority: 1
 ---
 Front end for Swanson Permit API using activeresource<br>
-[See it live!](https://swanson-permit-front-end.herokuapp.com)
-[Source code](https://github.com/fiteclub/swanson-permit-front-end)

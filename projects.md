@@ -11,9 +11,12 @@ display_type: screen
 <ul class="terminal">
   {% assign sorted_projects = site.projects | sort: 'priority' %}
   {% for project in sorted_projects %}
-      <h2>{{ project.title }}</h2>
-      <p>{{ project.excerpt }}</p>
-      <br>
+    <h2>{{ project.title}}</h2>
+    {{ project.excerpt }}
+    {% if project.production_url %}
+    <a href="{{ project.production_url }}" target="_blank">See it live!</a>
+    {% endif %}
+    <a href="{{ project.github_url }}" target="_blank">Source code</a><br><br>
   {% endfor %}
 </ul>
 <p>
